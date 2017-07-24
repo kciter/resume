@@ -203,10 +203,61 @@ header .contact-container .contact-list li span {
   font-size: 10pt;
   margin: 5px 0;
   text-decoration: underline;
+  color: #4a4;
 }
 .open-source .tags {
   font-size: 12px ;
   color: #999 ;
+}
+
+/* activity */
+.speaker h3 {
+  font-size: 18px ;
+}
+.speaker .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+.speaker .detail {
+  font-size: 14px ;
+}
+.speaker .detail a {
+  display: block;
+  font-size: 10pt;
+  margin: 5px 0;
+  text-decoration: underline;
+  color: #4a4;
+}
+
+/* activity */
+.activity h3 {
+  font-size: 18px ;
+}
+.activity .organization {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.activity .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+.activity .detail {
+  font-size: 14px ;
+}
+.activity .detail a {
+  display: block;
+  font-size: 10pt;
+  margin: 5px 0;
+  text-decoration: underline;
+  color: #4a4;
 }
 
 /* award */
@@ -304,6 +355,6 @@ blockquote {
   padding-bottom: 5px;
   padding-left: 10px;
   font-size: 10pt;
-  border-left: 5px solid #d1d709;
+  border-left: 5px solid #4a4;
   color: #888;
 }
