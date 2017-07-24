@@ -155,32 +155,18 @@ header .contact-container .contact-list li span {
   font-size: 14px ;
 }
 
-/* award */
-.award h3 {
-  font-size: 18px ;
-}
-.award .company {
-  margin: 0 0 10px ;
-  color: #959595 ;
-  font-size: 13px ;
-  font-weight: normal ;
-}
-.award .date {
-  position: absolute ;
-  top: 5px ;
-  right: 0 ;
-  color: #bbb ;
-  font-size: 12px ;
-}
-.award .detail {
-  font-size: 14px ;
-}
-
-
 /* project */
 .project ul li {
   font-size: 0 ;
   line-height: 16px ;
+}
+.project strong {
+  display: block;
+  /*width: 80%;*/
+  margin-bottom: 15px;
+  font-size: 16pt;
+  font-weight: bold;
+  border-bottom: 1px solid #EAEAEA;
 }
 .project h3 {
   position: relative ;
@@ -188,11 +174,8 @@ header .contact-container .contact-list li span {
   color: #666 ;
   font-size: 16px ;
 }
-.project h3::after {
-  content: ' - ' ;
-}
 .project .detail {
-  display: inline ;
+  display: display ;
   font-size: 14px ;
 }
 .project .tags {
@@ -226,6 +209,41 @@ header .contact-container .contact-list li span {
   color: #999 ;
 }
 
+/* award */
+.award h3 {
+  font-size: 18px ;
+}
+.award .organization {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.award .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+
+/* license */
+.license h3 {
+  font-size: 18px ;
+}
+.license .organization {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.license .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
 
 /* skill */
 .skill {
