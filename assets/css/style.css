@@ -29,6 +29,9 @@ header h1 {
   z-index: 1 ;
   font-size: 42px ;
 }
+header .heading-container {
+  margin-right: -20px;
+}
 header .name-container {
   position: absolute ;
   left: 770px ;
