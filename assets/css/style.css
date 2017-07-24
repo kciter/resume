@@ -155,6 +155,27 @@ header .contact-container .contact-list li span {
   font-size: 14px ;
 }
 
+/* award */
+.award h3 {
+  font-size: 18px ;
+}
+.award .company {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.award .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+.award .detail {
+  font-size: 14px ;
+}
+
 
 /* project */
 .project ul li {
@@ -179,6 +200,32 @@ header .contact-container .contact-list li span {
   color: #999 ;
 }
 
+/* open-source */
+.open-source ul li {
+  font-size: 0 ;
+  line-height: 16px ;
+}
+.open-source h3 {
+  position: relative ;
+  display: inline ;
+  color: #666 ;
+  font-size: 16px ;
+}
+
+.open-source .detail {
+  font-size: 14px ;
+}
+.open-source .detail a {
+  display: block;
+  font-size: 10pt;
+  margin: 5px 0;
+  text-decoration: underline;
+}
+.open-source .tags {
+  font-size: 12px ;
+  color: #999 ;
+}
+
 
 /* skill */
 .skill {
@@ -186,6 +233,14 @@ header .contact-container .contact-list li span {
 }
 .skill ul li {
   height: 15px ;
+}
+.skill strong {
+  display: block;
+  /*width: 80%;*/
+  margin-bottom: 15px;
+  font-size: 16pt;
+  font-weight: bold;
+  border-bottom: 1px solid #EAEAEA;
 }
 .skill h3 {
   float: left ;
@@ -222,4 +277,15 @@ footer {
 }
 footer a {
   font-weight: bold ;
+}
+
+
+blockquote {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 10pt;
+  border-left: 5px solid #d1d709;
+  color: #888;
 }
