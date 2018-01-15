@@ -213,7 +213,7 @@ header .contact-container .contact-list li span {
   color: #999 ;
 }
 
-/* activity */
+/* speaker */
 .speaker h3 {
   font-size: 18px ;
 }
@@ -228,6 +228,34 @@ header .contact-container .contact-list li span {
   font-size: 14px ;
 }
 .speaker .detail a {
+  display: block;
+  font-size: 10pt;
+  margin: 5px 0;
+  text-decoration: underline;
+  color: #4a4;
+}
+
+/* book */
+.book h3 {
+  font-size: 18px ;
+}
+.book .organization {
+  margin: 0 0 10px ;
+  color: #959595 ;
+  font-size: 13px ;
+  font-weight: normal ;
+}
+.book .date {
+  position: absolute ;
+  top: 5px ;
+  right: 0 ;
+  color: #bbb ;
+  font-size: 12px ;
+}
+.book .detail {
+  font-size: 14px ;
+}
+.book .detail a {
   display: block;
   font-size: 10pt;
   margin: 5px 0;
