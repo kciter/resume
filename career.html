@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Résumé</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="./assets/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./assets/css/all.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <style>
+      .content ul {
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+      .content strong {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="resume-wrapper">
+      <header>
+        <div class="header-inner">
+          <div class="avatar-wrapper">
+            <div class="avatar">
+              <img src="./assets/image/profile.jpeg" alt="avatar">
+            </div>
+          </div>
+          <div class="profile-wrapper">
+            <h1>Sunhyoup Lee</h1>
+            <!-- <summary>Product Developer</summary> -->
+
+            <div style="width: 30px; height: 2px; background: #333; margin-top: 16px;"></div>
+
+            <div class="social-links">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-globe"></i>
+                  <a href="https://kciter.so" target="_blank">https://kciter.so</a>
+                </li>
+                <li>
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/kciter" target="_blank">https://github.com/kciter</a>
+                </li>
+                <!-- <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <a href="mailto:kciter@naver.com" target="_blank">kciter@naver.com</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 경력 -->
+      <main>
+        <section>
+          <h2>경력</h2>
+          
+          <div class="content">
+            <div class="subject">
+              <h3>주식회사 코발트</h3>
+              <summary>CTO</summary>
+              <span class="duration">2018. 07 ~ 2024. 12</span>
+            </div>
+
+            <p>
+              Kotlin, Java, Spring Boot 기반으로 다양한 B2B SaaS 제품(REALIZER.AI, PRESENT, Caple 등)의 백엔드 시스템을 설계하고 개발했으며 도메인 기반 모듈러 모놀리식 아키텍처를 적용하여 유지보수성과 확장성을 확보했습니다.
+              또한, TypeScript, React, Next.js를 이용하여 웹 애플리케이션을 개발하였습니다.
+              AWS와 Kubernetes 환경에서 운영되는 안정적인 서비스 인프라를 구축하였으며, LLM 모델을 활용한 AI 에이전트 개발을 하기도 했습니다.
+            </p>
+
+            <br />
+
+            <ul>
+              <li>
+                <strong>Java/Kotlin 기반 Spring Boot 애플리케이션 개발 및 운영</strong><br />
+                <ul>
+                  <li>RESTful API 설계 및 구현</li>
+                  <li>Spring MVC/WebFlux를 이용한 비즈니스 로직 구현</li>
+                  <li>Spring Cloud를 이용한 MSA 분산 시스템 구성</li>
+                  <li>Gradle 멀티 모듈을 사용하여 도메인 기반 모듈러 모놀리식 아키텍처 적용</li>
+                  <li>멀티테넌트 아키텍처 적용으로 고객별 격리 환경 제공</li>
+                  <li>암호화 및 인증/인가 로직 설계</li>
+                  <li>Spring Batch를 이용한 데이터 수집</li>
+                </ul>
+              </li>
+              <li>
+                <strong>AWS 기반 클라우드 인프라 설계 및 운영</strong><br />
+                <ul>
+                  <li>EKS(Kubernetes), RDS(MySQL), S3, CloudFront, Route53 등 활용</li>
+                  <li>ArgoCD, GitHub Actions를 이용한 CI/CD 자동화 파이프라인 구축</li>
+                  <li>개발 생산성과 비용의 균형을 고려한 리소스 설계</li>
+                  <li>시스템 아키텍처 설계 및 성능 최적화</li>
+                  <li>대규모 트래픽을 고려한 API 성능 개선 및 로드밸런싱 구성</li>
+                  <li>MongoDB 및 MySQL 기반 데이터 모델링 및 쿼리 최적화</li>
+                </ul>
+              </li>
+              <li>
+                <strong>TypeScript, React/Next.js 기반 웹 애플리케이션 개발 및 운영</strong><br />
+                <ul>
+                  <li>React/Next.js를 이용한 SSR 및 CSR 웹 애플리케이션 개발</li>
+                  <li>코드 공유 및 빌드 성능을 위한 모노레포 시스템 구축</li>
+                  <li>디자인 시스템 자체 구축 및 오픈소스화</li>
+                  <li>Codegen을 이용한 웹 API 호출 코드 생성 자동화</li>
+                  <li>Vercel 배포 및 Edge CDN 캐시를 이용한 비용 최적화</li>
+                  <li>ProseMirror 기반 자체 텍스트 에디터 구축</li>
+                  <li>Grid 기반 드래그 앤 드롭 웹 빌더 시스템 구축</li>
+                  <li>WASM을 이용한 비디오/오디오 인코딩</li>
+                  <li>i18n 국제화 시스템 구축</li>
+                  <li>SSE/WebSocket을 이용한 실시간 상호작용 시스템 구축</li>
+                  <li>이미지/비디오/오디오 혼합 자체 멀티미디어 플레이어 구현</li>
+                  <li>플러그인 기반 자체 Drawing 라이브러리 구현</li>
+                </ul>
+              </li>
+              <li>
+                <strong>스크럼 기반 애자일 프로세스 정착</strong><br />
+                <ul>
+                  <li>개발 주기 및 이슈 트래킹 투명화, 팀 내 커뮤니케이션 효율 향상</li>
+                  <li>팀 내 지식 향상을 위한 사내 기술 발표회 주최</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <div class="subject">
+              <h3>진인사컴퍼니</h3>
+              <summary>풀스택 엔지니어</summary>
+              <span class="duration">2017. 12 ~ 2018. 06</span>
+            </div>
+
+            <p>
+              캐릭터 기반 인공지능 스피커 뽀로롯의 백엔드 및 안드로이드 앱을 개발했습니다. Scala 기반의 Play Framework와 Slick ORM을 활용해 서버 API를 구축하였고,
+              챗봇의 Intent 분석 결과를 바탕으로 TTS(Text-to-Speech) 음성 출력을 수행하는 안드로이드 애플리케이션을 Kotlin 및 RxJava로 구현했습니다.
+            </p>
+
+            <br />
+
+            <ul>
+              <li>
+                <strong>Scala + Play Framework 기반 RESTful API 서버 개발</strong><br />
+                <ul>
+                  <li>함수형 패러다임을 이용한 비즈니스 로직 구성</li>
+                  <li>Intent 분석 결과를 처리하여 적절한 캐릭터 음성을 생성하는 서버 로직 구현</li>
+                  <li>Slick ORM을 활용한 타입 안정성과 성능을 고려한 DB 접근 로직 구성</li>
+                </ul>
+              </li>
+              <li>
+                <strong>OAuth 2.0 기반 인증/인가 시스템 구현</strong><br />
+                <ul>
+                  <li>Google, Naver 등 소셜 계정을 연동할 수 있도록 다중 소셜 로그인 모델링 설계</li>
+                  <li>인증 토큰 발급, 리프레시, 사용자 계정 통합 처리를 위한 백엔드 로직 개발</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Kotlin + RxJava 기반 Android 애플리케이션 개발</strong><br />
+                <li>사용자 음성 입력 → 서버 API 호출 → 음성 응답 생성 흐름 전체 구현</li>
+                <li>RxJava를 활용해 음성 처리 및 네트워크 통신의 비동기 흐름 제어</li>
+                <li>캐릭터 TTS 음성 출력 시스템 연동 및 커스터마이징</li>
+              </li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <div class="subject">
+              <h3>포잉</h3>
+              <summary>풀스택 엔지니어</summary>
+              <span class="duration">2016. 07 ~ 2017. 11</span>
+            </div>
+
+            <p>
+              레스토랑 매장의 POS 기기에 탑재되는 예약 및 매출 관리 시스템을 개발했습니다. 
+              Laravel 기반으로 백엔드 API를 구현하고, nw.js 기반의 웹 기반 데스크탑 POS 애플리케이션을 개발하여 클라이언트와 연동했습니다.
+              매출 및 정산 처리 로직을 위한 데이터 모델링과 SQL 쿼리 최적화 작업을 직접 수행했습니다.
+            </p>
+
+            <br />
+
+            <ul>
+              <li>
+                <strong>PHP(Laravel) 기반 REST API 서버 개발</strong><br />
+                <ul>
+                  <li>예약/매출/정산 로직 중심의 비즈니스 로직 구현</li>
+                  <li>MySQL 기반 DB 모델링 및 다수의 관계형 쿼리 최적화 수행</li>
+                </ul>
+              </li>
+              <li>
+                <strong>POS 전용 데스크탑 애플리케이션 개발 (nw.js)</strong><br />
+                <ul>
+                  <li>웹 기술 기반으로 POS 장비에서 실행 가능한 앱 구현</li>
+                  <li>pjax(PushState + AJAX)를 이용해 초기 형태의 SPA 구현</li>
+                </ul>
+              </li>
+              <li>
+                <strong>프론트엔드 개발 (jQuery → Vue.js 마이그레이션 일부 진행)</strong><br />
+                <ul>
+                  <li>매장 관리 화면의 반응성 향상을 위해 Vue.js 일부 도입</li>
+                  <li>jQuery 기반 UI를 유지하면서 점진적으로 SPA화 진행</li>
+                  <li>오프라인 환경에서도 안정적인 동작을 위해 클라이언트-서버 간 동기화 로직 설계 및 예외 처리 강화</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="content">
+            <div class="subject">
+              <h3>파킹스퀘어 / 더벤처스랩</h3>
+              <summary>풀스택 엔지니어</summary>
+              <span class="duration">2014. 04 ~ 2016. 07</span>
+            </div>
+
+            <p>
+              O2O 주차 플랫폼 파킹스퀘어의 초기 멤버로 합류하여 기존 외주 개발 시스템의 성능 및 유지보수 문제를 해결하기 위해 전면적인 리팩토링과 아키텍처 전환을 주도했습니다.
+              이후 파킹스퀘어에 대한 개발 외주를 전담하던 투자사 산하의 개발 조직에서 병역특례 산업기능요원으로 복무하며, 기존 수작업으로 운영되던 결제 및 정산 프로세스를 시스템화했습니다.
+              더벤처스랩 소속으로 근무하다가 정식으로 파킹스퀘어 개발팀에 합류하였고, 이후 회사가 카카오에 인수된 뒤에는 카카오 주차 프로젝트의 초기 개발에 참여했습니다.
+            </p>
+
+            <br />
+
+            <ul>
+              <li>
+                <strong>기존 외주 개발 시스템 마이그레이션 작업</strong><br />
+                <ul>
+                  <li>기존 PHP CodeIgniter + 카페24 호스팅 환경을 → Ruby on Rails + AWS 기반으로 마이그레이션</li>
+                  <li>최적화되지 않은 MySQL 데이터베이스에 대해 인덱스 추가, 비정규화된 테이블 구조 정리 및 마이그레이션 수행</li>
+                  <li>외주로 제작된 iOS 앱의 기술적 한계를 극복하기 위해 Swift로 신규 앱 개발</li>
+                  <li>예약, 결제, 정산 도메인 전반에 대한 구조 설계 및 개선</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Ruby on Rails 기반 웹 서버 애플리케이션 개발 및 운영</strong><br />
+                <ul>
+                  <li>RESTful API 설계 및 구현</li>
+                  <li>실시간 예약 및 빌링 기능 구현, 결제까지 가능한 단일 예약 플로우 구성</li>
+                  <li>관리자용 결제 정산 백오피스를 구축하여 운영 효율성 향상</li>
+                  <li>지도 데이터 최적화 쿼리 구현</li>
+                  <li>Queue와 Worker(Sidekiq) 서버를 이용한 대규모 푸시 알림 전송 시스템 구축</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Swift 기반 iOS 애플리케이션 개발 및 운영</strong><br />
+                <ul>
+                  <li>MVVM 아키텍처를 도입하여 View의 추상화 달성</li>
+                  <li>iOS 앱에 RxSwift를 도입하여 구조 개선 및 비동기 흐름 안정화</li>
+                  <li>Storyboard 기반 UI 구축</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>학력</h2>
+          
+          <div class="content">
+            <div class="subject">
+              <h3>독학사</h3>
+              <summary>컴퓨터공학</summary>
+              <span class="duration">2023. 02. 24 (학위 취득)</span>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="subject">
+              <h3>NHN NEXT</h3>
+              <summary>게임 서버, 게임 클라이언트</summary>
+              <span class="duration">2013. 03 ~ 2018. 02 (수료)</span>
+            </div>
+          </div>
+
+          <div class="content">
+            <div class="subject">
+              <h3>선린인터넷고등학교</h3>
+              <summary>웹운영과</summary>
+              <span class="duration">2010. 03 ~ 2013. 02 (졸업)</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
