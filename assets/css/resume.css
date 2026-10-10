@@ -1,0 +1,335 @@
+/*
+ * 이력서(index.html, ko.html) 스타일. 고정폭 글꼴로 짠 README 같은 한 단 문서.
+ * - 모든 섹션이 같은 두 칸을 쓴다: 왼쪽은 날짜(오픈소스는 별 수, 기술 스택은 분류), 오른쪽은 내용.
+ *   왼쪽 칸만 위에서 아래로 훑어도 시간 순서가 한눈에 들어온다
+ * - 포인트 색(#5c6ac4)은 이름 뒤 커서, 섹션의 ##, 소개의 //, 지금 다니는 곳의 "now"에만 쓴다
+ * - 이력서라 움직임은 두지 않는다(커서도 깜빡이지 않는다)
+ * career.html, portfolio.html은 예전 style.css를 그대로 쓴다.
+ */
+:root {
+  --ink: #1d2228;
+  --text: #3f4750;
+  --muted: #858d97;
+  --faint: #a7aeb7;
+  --rule: #e7e9ed;
+  --point: #5c6ac4;
+  /* 한글은 JetBrains Mono에 없어 나눔고딕코딩으로, 그것도 없으면 시스템 글꼴로 */
+  --mono: 'JetBrains Mono', 'Nanum Gothic Coding', ui-monospace, 'SF Mono', Menlo, Consolas, 'Apple SD Gothic Neo', monospace;
+  --when: 136px;
+  --gap: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 13.5px;
+  line-height: 1.7;
+  /* 리거처(=> 같은 합자)를 끈다 */
+  font-feature-settings: 'calt' 0;
+  -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
+}
+
+h1,
+h2,
+h3,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cv {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 104px 36px 120px;
+}
+
+/* ---------- 머리 ---------- */
+.name {
+  display: flex;
+  align-items: center;
+  color: var(--ink);
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+/* 깜빡이지 않는 커서 */
+.cursor {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.92em;
+  margin-left: 0.12em;
+  background: var(--point);
+}
+
+.role {
+  margin-top: 14px;
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.bio {
+  max-width: 44em;
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+.cm {
+  color: var(--point);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: 18px;
+}
+
+.links a,
+.t[href] {
+  text-decoration: underline;
+  text-decoration-color: #d5d9de;
+  text-underline-offset: 4px;
+}
+
+.links a:hover,
+.t[href]:hover {
+  color: var(--point);
+  text-decoration-color: currentColor;
+}
+
+/* 제목 링크는 평소엔 밑줄 없이, 마우스를 올릴 때만 */
+.t[href] {
+  text-decoration-color: transparent;
+}
+
+/* ---------- 섹션 ---------- */
+.sec {
+  margin-top: 56px;
+}
+
+.sec-h {
+  margin-bottom: 20px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hash {
+  margin-right: 10px;
+  color: var(--point);
+}
+
+.rows {
+  display: grid;
+  gap: 26px;
+}
+
+.tight .rows {
+  gap: 6px;
+}
+
+/* 한 줄: 왼쪽 칸(날짜)과 오른쪽 내용 */
+.row {
+  display: grid;
+  grid-template-columns: var(--when) minmax(0, 1fr);
+  column-gap: var(--gap);
+  break-inside: avoid;
+}
+
+.when {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.when small {
+  display: block;
+  color: var(--faint);
+  font-size: 11.5px;
+}
+
+.now {
+  color: var(--point);
+}
+
+.stack .when {
+  color: var(--ink);
+  white-space: normal;
+}
+
+.org {
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pos {
+  color: var(--muted);
+}
+
+.projects {
+  margin-top: 4px;
+}
+
+.projects > span:not(.sep) {
+  white-space: nowrap;
+}
+
+.sep {
+  color: #c3c8cf;
+}
+
+.line .t {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+/* 나눔고딕코딩에는 500이 없어 한글만 가늘어지므로, 한국어판은 400으로 맞춘다 */
+:lang(ko) .line .t {
+  font-weight: 400;
+}
+
+.line .ev {
+  margin-left: 4px;
+  color: var(--muted);
+}
+
+/* ---------- 좁은 화면: 날짜를 내용 위로 ---------- */
+@media (max-width: 640px) {
+  body {
+    font-size: 13px;
+  }
+
+  .cv {
+    padding: 64px 20px 80px;
+  }
+
+  .name {
+    font-size: 34px;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .when small {
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .rows {
+    gap: 22px;
+  }
+
+  .tight .rows {
+    gap: 12px;
+  }
+
+  .stack .when {
+    font-weight: 700;
+  }
+
+  /* 행사 이름·저장소 주소는 제목 아래 줄로 */
+  .line .ev {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+/* ---------- 인쇄(A4): 화면 여백을 걷고 글자와 간격을 줄인다. 항목은 페이지 사이에서 잘리지 않게 ---------- */
+@page {
+  size: A4;
+  margin: 14mm 15mm;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-size: 11px;
+  }
+
+  .cv {
+    max-width: none;
+    padding: 0;
+  }
+
+  .name {
+    font-size: 32px;
+  }
+
+  .role {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .bio,
+  .links {
+    margin-top: 10px;
+  }
+
+  .sec {
+    margin-top: 26px;
+  }
+
+  .sec-h {
+    margin-bottom: 10px;
+    font-size: 12.5px;
+    break-after: avoid;
+  }
+
+  .rows {
+    gap: 12px;
+  }
+
+  .tight .rows {
+    gap: 3px;
+  }
+
+  .row {
+    --when: 116px;
+  }
+
+  .org {
+    font-size: 11.5px;
+  }
+
+  .when small {
+    font-size: 9.5px;
+  }
+
+  /* 종이에서는 눌러 볼 수 없으니 링크 밑줄을 걷는다 */
+  .links a {
+    text-decoration: none;
+  }
+}
