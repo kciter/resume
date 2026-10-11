@@ -1,3 +1,3 @@
-# Lee Sun-Hyoup's Résumé
+# Sunhyoup's Résumé
 
 Hello! :smile:
