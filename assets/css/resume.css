@@ -194,18 +194,6 @@ a {
   color: var(--muted);
 }
 
-.projects {
-  margin-top: 4px;
-}
-
-.projects > span:not(.sep) {
-  white-space: nowrap;
-}
-
-.sep {
-  color: #c3c8cf;
-}
-
 .line .t {
   color: var(--ink);
   font-weight: 500;
